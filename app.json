@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/course/course",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#00bcd4",
+    "navigationBarTitleText": "好奇猫",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#0097a7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_home.png",
+        "selectedIconPath": "images/ic_home_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/ic_person.png",
+        "selectedIconPath": "images/ic_person_select.png"
+      }
+    ]
+  }
+}

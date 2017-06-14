@@ -1,0 +1,20 @@
+<!--pages/course/course.wxml-->
+<view class="media">
+  <view class="name">{{detail.name}}</view>
+  <view wx:if="{{link.length > 0}}">
+    <video src="http://o86bpj665.bkt.clouddn.com/{{link}}/index.mp4" controls class="video"></video>
+  </view>
+</view>
+<view class="intro">
+  {{detail.intro}}
+</view>
+<view class="content">
+  <view class="header">课程内容</view>
+  <view wx:for="{{detail.content}}" wx:key="id">
+      <view class="chapter">{{item.header}}</view>
+      <view wx:for="{{item.section}}" wx:key="title" class="title">
+        {{index + 1}}. {{item.title}}
+      </view>
+  </view>
+  <navigator url="../mine/mine" open-type="switchTab">我的主页</navigator>
+</view>
